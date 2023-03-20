@@ -1,0 +1,224 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+#container{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #f1f4f9;
+}
+/* sidebar design */
+#sidebar{
+    position: absolute;
+    height: 100%;
+    width: 100px;
+    background-color: #9c27b0;
+    border-radius: 0 25px 25px 0;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    z-index: 999;
+    display: flex;
+}
+/* styling logo */
+#sidebar #logo{
+    position: absolute;
+    top: 3%;
+    height: 60px;
+    width: 60px;
+    display: grid;
+    place-content: center;
+}
+#sidebar #logo img{
+    width: 100%;
+    height: 100%;
+}
+/* styling nav button */
+#button{
+    position: absolute;
+    width: 60px;
+    height: 50px;
+    top: calc(50% - 25px);
+    cursor: pointer;
+}
+.opennav span{
+    display: block;
+    height: 5px;
+    width: 40px;
+    background-color: #fff;
+    border-radius: 50px;
+    margin: 8px 0;
+}
+.opennav span:nth-child(2){
+    margin: 8px 12px;
+    transition: 0.4s;
+}
+.opennav:hover span:nth-child(2){
+    margin: 8px 0;
+}
+/* main navigation styling */
+#navbar-container{
+    height: 100vh;
+    width: calc(100% + 300px);
+    position: absolute;
+    left: 100px;
+    top: 0;
+    z-index: 998;
+    backdrop-filter: blur(20px);
+    display: none;
+}
+#navbar-container #navbar{
+    height: 100%;
+    width: 300px;
+    display: grid;
+    place-items: center;
+    background-color: #771388;
+}
+#navbar-container #navbar ul{
+    list-style: none;
+}
+#navbar-container #navbar ul li{
+    margin: 30px 0;
+}
+#navbar-container #navbar ul li a{
+    text-decoration: none;
+    color: #ced2da;
+    font-size: 20px;
+    transition: 0.5s;
+}
+#navbar-container #navbar ul li a:hover{
+    margin: 30px 15px;
+    color: #f1f4f9;
+}
+#navbar-container #navbar ul li .active a:hover{
+    margin: 30px 10px;
+}
+/* top navbar */
+#main{
+    height: 100%;
+    width: calc(100% - 90px);
+    position: absolute;
+    left: 90px;
+    top: 0;
+    z-index: 997;
+}
+#main #header{
+    height: 70px;
+    width:100%;
+    /* left: -30px; */
+    background-color: #fff;
+    box-shadow: 2px 2px 5px #00000030;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+#main #header #header-title{
+    left: 5%;
+    font-weight: bolder;
+    font-size: 22px;
+    position: absolute;
+    color: #9c27b0;
+}
+#main #header #searchbox{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    left:38%;
+    z-index: 997;
+}
+#main #header #searchbox input[type="text"]{
+    height: 45px;
+    width: 205px;
+    border: none;
+    border-radius: 30px 0px 0px 30px;
+    outline: none;
+    border: 1px solid #9c27b0;
+    font-size: 20px;
+}
+#main #header #searchbox input[type="text"]::placeholder{
+    color: #9c27b0;
+    text-align: center;
+}
+#main #header #searchbox input[type="submit"]{
+    height: 45px;
+    width: 80px;
+    border: none;
+    border-radius: 0px 30px 30px 0;
+    outline: none;
+    background: #9c27b0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    /* margin-left: 10px; */
+
+}
+#logout{
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    display: grid;
+    /* right: 8%; */
+    left: 80%;
+    font-size: 18px;
+    place-items: center;
+    background-color: #771388;
+    border-radius: 30px;
+}
+#logout a{
+    text-decoration: none;
+    color: #fff;
+}
+/* styling analytics */
+#analytics{
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    left:0;
+    top: 14%;
+    display: flex;
+    flex-direction: row;
+}
+#analytics .cards{
+    height: 160px;
+    width: 350px;
+    background-color: #fff;
+    margin: 0 50px;
+    padding: 20px;
+    display: grid;
+    place-items: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #00000030;
+}
+#analytics .cards .icon{
+    font-size: 35px;
+    color: #9c27b0;
+}
+#analytics .cards h2{
+    font-size: 50px;
+    color: #000;
+}
+#analytics .cards h4{
+    font-size: 20px;
+    color: #000;
+}
+#analytics .cards:hover{
+    background-color: #9c27b0;
+    transition: 0.8s;
+}
+#analytics .cards:hover .icon{
+    color: #fff;
+}
+#analytics .cards:hover h2{
+    color: #fff;
+}
+#analytics .cards:hover h4{
+    color: #fff;
+}
+/* table styling */
+
+

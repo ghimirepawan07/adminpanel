@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container">
+        <!-- side bar -->
+        <div id="sidebar">
+            <div id="logo">
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <!-- navigation bar open button -->
+            <div id="button" class="opennav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!-- main navigation item -->
+        <div id="navbar-container">
+            <div id="navbar">
+                <ul>
+                    <li class="active"><a href="#">Dashboard</a></li>
+                    <li><a href="#">User</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Booking</a></li>
+                    <li><a href="#">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- main header -->
+        <div id="main">
+        <div id="header">
+            <div id="header-title">DASHBOARD</div>
+            <div id="searchbox">
+                <input type="text" name="" placeholder="Search">
+                <input type="submit" value="Search">
+            </div>
+            <div id="logout">
+                <a href="#">Log Out</a>
+            </div>
+        </div>
+        <!-- data shown cards -->
+        <div id="analytics">
+            <div class="cards">
+                <i class="fa-solid fa-users icon"></i>
+                <h2>150</h2>
+                <h4>Users</h4>
+            </div>
+            <div class="cards">
+                <i class="fa-solid fa-users icon"></i>
+                <h2>6</h2>
+                <h4>Categories</h4>
+            </div>
+            <div class="cards">
+                <i class="fa-solid fa-check-to-slot icon"></i>
+                <h2>6</h2>
+                <h4>Booking</h4>
+            </div>
+            <div class="cards">
+                <i class="fa-solid fa-users  icon"></i>
+                <h2>8</h2>
+                <h4>Available</h4>
+            </div>
+        </div>
+        <!-- table -->
+        <table id="table">
+            <tr>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Status</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Pawan</td>
+                    <td>pawan@gmail.com</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Shyam Pradhan</td>
+                    <td>pawan@gmail.com</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Hari Sarkar</td>
+                    <td>pawan@gmail.com</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Roman</td>
+                    <td>pawan@gmail.com</td>
+                    <td>Active</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+</body>
+</html>
